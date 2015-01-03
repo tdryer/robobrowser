@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import os
-import re
+import re, uuid
 import sys
 
 from setuptools import setup, find_packages
@@ -35,7 +35,7 @@ readme = open('README.rst').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 requirements = [
     str(requirement.req)
-    for requirement in parse_requirements('requirements.txt')
+    for requirement in parse_requirements('requirements.txt', session=uuid.uuid1())
 ]
 
 setup(
