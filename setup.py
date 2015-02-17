@@ -39,7 +39,7 @@ requirements = [
 ]
 
 setup(
-    name='robobrowser',
+    name='hangups-robobrowser',
     version=__version__,
     description='Your friendly neighborhood web scraper',
     author='Joshua Carp',
